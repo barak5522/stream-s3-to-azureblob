@@ -1,4 +1,4 @@
-"""Python setup.py for project_name package"""
+"""Python setup.py for stream_s3_to_azureblob package"""
 import io
 import os
 from setuptools import find_packages, setup
@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely.
-    >>> read("project_name", "VERSION")
+    >>> read("stream_s3_to_azureblob", "VERSION")
     '0.1.0'
     >>> read("README.md")
     ...
@@ -30,17 +30,17 @@ def read_requirements(path):
 
 
 setup(
-    name="project_name",
-    version=read("project_name", "VERSION"),
-    description="project_description",
-    url="https://github.com/author_name/project_urlname/",
+    name="stream_s3_to_azureblob",
+    version=read("stream_s3_to_azureblob", "VERSION"),
+    description="Awesome stream_s3_to_azureblob created by barak5522",
+    url="https://github.com/barak5522/stream-s3-to-azureblob/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    author="author_name",
+    author="barak5522",
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": ["project_name = project_name.__main__:main"]
+        "console_scripts": ["stream_s3_to_azureblob = stream_s3_to_azureblob.__main__:main"]
     },
     extras_require={"test": read_requirements("requirements-test.txt")},
 )

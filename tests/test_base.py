@@ -1,5 +1,5 @@
-from project_name.base import NAME
+from stream_s3_to_azureblob.base import NAME
 
 
 def test_base():
-    assert NAME == "project_name"
+    assert NAME == "stream_s3_to_azureblob"
